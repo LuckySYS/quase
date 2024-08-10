@@ -12,6 +12,7 @@ body{
 .interface{
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 4%;
 }
 
 header .btn-contato button, .hero-site button, .hoteis button{
@@ -110,6 +111,40 @@ header .menu-desktop nav ul li a{
 header .btn-contato button{
     width: 140px;
     height: 50px;
+}
+
+/* Estilo do botao do menu mobile */
+
+header .btn-menu-mob{
+    display: none;
+}
+
+header .btn-menu-mob div{
+    background-color: #fff;
+    height: 3px;
+    margin: 10px 0;
+    transition: .3s;
+}
+
+header .btn-menu-mob .line-menumob-1{
+    width: 30px;
+}
+
+header .btn-menu-mob .line-menumob-2{
+    width: 20px;
+}
+
+header.rolar .btn-menu-mob div{
+    background-color: #000;
+}
+
+header .btn-menu-mob .line-menumob-1.ativo1{
+    transform: rotate(45deg) translate(30%);
+}
+
+header .btn-menu-mob .line-menumob-2.ativo2{
+    transform: rotate(-45deg) translate(30%);
+    width: 30px;
 }
 
 /* Estilo do hero */
